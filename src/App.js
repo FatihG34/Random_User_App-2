@@ -17,7 +17,7 @@ function App() {
   const [person, setPerson] = useState([]);
   const [info, setInfo] = useState('');
   const [show, setShow] = useState(false);
-  const [my, setMy] = useState('');
+  const [my, setMy] = useState('name');
   const [table, setTable] = useState([]);
   const [pageLoad, setPageLoad] = useState(true)
 
@@ -32,7 +32,7 @@ function App() {
       }
       const { data } = await axios.get(url);
       setPerson(data.results);
-      setMy('name');
+      // setMy('name');
       setPageLoad(true);
     } catch (error) {
       console.log(error);
@@ -73,7 +73,7 @@ function App() {
                 <button className="icon" data-label="name" onClick={(e) => setInfoMy(item.name.first, 'name')}>
                   <img src={item.gender === 'male' ? manSvg : womanSvg} alt="user" id="iconImg" />
                 </button>
-                <button className="icon" data-label="email" onClick={() => setInfoMy(item.email, 'email')}>
+                <button className="icon" data-label="email" onClick={(e) => setInfoMy(item.email, 'email')}>
                   <img src={mailSvg} alt="mail" id="iconImg" />
                 </button>
                 <button className="icon" data-label="age" onClick={() => setInfoMy(item.dob.age, 'age')}>
