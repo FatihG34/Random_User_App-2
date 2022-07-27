@@ -32,12 +32,13 @@ function App() {
       }
       const { data } = await axios.get(url);
       setPerson(data.results);
-      // setMy('name');
+      setInfo(data.results[0].name.first)
       setPageLoad(true);
     } catch (error) {
       console.log(error);
     }
   };
+  console.log(info);
   const addUser = () => {
     setShow(true);
     const check = table.filter((item) => item.email === person[0].email);
@@ -50,11 +51,6 @@ function App() {
     getPerson()
   }, [])
 
-  // if (pageLoad) {
-  //   return <div className="page-loading">
-  //     <h1>Page is Loading...</h1>
-  //   </div >
-  // }
   return (
     <main>
       <div className="block bcg-orange">
