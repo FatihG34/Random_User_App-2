@@ -2,44 +2,25 @@
 
 ## Description
 
-Project aims to create a Random User App 2.
+- *This App was build with React*
 
-## Project Skeleton
+## In Random User App 2
 
-```
-Random User App 2 (folder)
-|
-|----readme.md         # Given to the students (Definition of the project)
-SOLUTION
-├── public
-│     └── index.html
-├── src
-│    ├── assets.js
-│    │       └── [images]
-│    ├── App.js
-│    ├── App.css
-│    ├── index.js
-│    └── index.css
-├── package.json
-└── yarn.lock
-```
+### I have used to
 
-<!-- ## Expected Outcome -->
+- axios for fetching data from Random User API,
 
-<!-- ![Project 007 Snapshot](random-user-app.gif) -->
+- Local state,
+
+- map function for monitoring data in table.
+
+## Outcome:
+
+![Project Snapshot](random-user-app-2.gif)
 
 ## Objective
 
 Build a Random User App using ReactJS.
 
-### At the end of the project, following topics are to be covered
 
-- HTML
-
-- CSS
-
-- JS
-
-- ReactJS
-
-**<p align="center">&#9786; Be Happy &#9997;</p>**
+**<p align="center">&#9786; Thanks for visiting &#9997;</p>**
